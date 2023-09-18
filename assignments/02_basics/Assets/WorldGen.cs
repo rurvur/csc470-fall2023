@@ -15,6 +15,7 @@ public class WorldGen : MonoBehaviour
             generatePin();
             generateBlock();
         }
+        
     }
 
     void generatePin()
@@ -30,10 +31,11 @@ public class WorldGen : MonoBehaviour
     void generateBlock()
     {
         float x = Random.Range(-3, 3);
-        float y = Random.Range(2, 4);
+        float y = Random.Range(2, 3);
         float z = Random.Range(-40, 40);
         Vector3 pos = new Vector3(x, y, z);
         GameObject Block = Instantiate(BlockPrefab, pos, Quaternion.identity);
+        
     }
 
     // Update is called once per frame
