@@ -12,7 +12,7 @@ public class GameOfLife : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cells = new CellScript[20, 20];
+        cells = new CellGen[20, 20];
         for (int x = 0; x < 20; x++)
         {
             for (int y = 0; y < 20; y++)

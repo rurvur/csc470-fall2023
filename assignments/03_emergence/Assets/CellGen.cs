@@ -6,12 +6,12 @@ public class CellGen : MonoBehaviour
 {
 
     public bool alive = false;
-    public color liveCol;
-    public color deadCol;
+    public Color liveCol;
+    public Color deadCol;
     public int x = -1;
     public int y = -1;
     GameOfLife gol;
-    renderer rend;
+    Renderer rend;
     
     // Start is called before the first frame update
     void Start()
@@ -33,6 +33,32 @@ public class CellGen : MonoBehaviour
             rend.material.color = deadCol;
         }
     }
+
+    private void OnMouseDown()
+    {
+        alive = !alive;
+        ColorChange();
+        Debug.Log(CountLiveNeighbors());
+    }
+
+    int CountLiveNeighbors()
+    {
+        int alive = 0;
+
+        for (int xIndex = x - 1; xIndex <= x + 1; xIndex++)
+        {
+            for (int yIndex = y - 1; yIndex <= y + 1; yIndex++)
+            {
+                if (gol.cells[xIndex, yIndex].alive)
+                {
+                    alive++;
+                }
+            }
+        }
+
+        return alive;
+    }
+
 
     // Update is called once per frame
     void Update()
