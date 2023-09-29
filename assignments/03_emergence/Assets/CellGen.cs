@@ -98,6 +98,10 @@ public class CellGen : MonoBehaviour
                 transform.localScale += scaleChange;
             }
         }
+        if (Time.frameCount % 5000 == 0)
+        {
+            alive = (Random.value < 0.2f);
+        }
         
     }
 }
