@@ -50,10 +50,14 @@ public class CellGen : MonoBehaviour
         {
             for (int yIndex = y - 1; yIndex <= y + 1; yIndex++)
             {
-                if (gol.cells[xIndex, yIndex].alive)
+                if (xIndex != 0 && yIndex != 0 && xIndex != 20 && yIndex != 20 && xIndex != -1 && yIndex != -1)
                 {
-                    alive++;
+                    if (gol.cells[xIndex, yIndex].alive)
+                    {
+                        alive++;
+                    }
                 }
+                
             }
         }
 
@@ -92,7 +96,7 @@ public class CellGen : MonoBehaviour
                 transform.localScale += scaleChange;
 
             }
-            else
+            else if (!alive)
             {
                 scaleChange = new Vector3(0f, -0.1f, 0f);
                 transform.localScale += scaleChange;
