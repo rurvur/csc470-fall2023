@@ -12,6 +12,7 @@ public class CellGen : MonoBehaviour
     public int y = -1;
     GameOfLife gol;
     Renderer rend;
+    private Vector3 scaleChange;
     
     // Start is called before the first frame update
     void Start()
@@ -38,10 +39,10 @@ public class CellGen : MonoBehaviour
     {
         alive = !alive;
         ColorChange();
-        Debug.Log(CountLiveNeighbors());
+        Debug.Log(CountAliveNeighbors());
     }
 
-    int CountLiveNeighbors()
+    int CountAliveNeighbors()
     {
         int alive = 0;
 
@@ -63,6 +64,40 @@ public class CellGen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Time.frameCount % 30 == 0)
+        {
+            if ((CountAliveNeighbors() == 2) && alive)
+            {
+                alive = true;
+                ColorChange();
+            }
+            else if (CountAliveNeighbors() == 3 && alive)
+            {
+                alive = true;
+                ColorChange();
+            }
+            else if (CountAliveNeighbors() == 3 && alive == false)
+            {
+                alive = true;
+                ColorChange();
+            }
+            else
+            {
+                alive = false;
+                ColorChange();
+            }
+            if (alive)
+            {
+                scaleChange = new Vector3(0f, 0.1f, 0f);
+                transform.localScale += scaleChange;
+
+            }
+            else
+            {
+                scaleChange = new Vector3(0f, -0.1f, 0f);
+                transform.localScale += scaleChange;
+            }
+        }
         
     }
 }

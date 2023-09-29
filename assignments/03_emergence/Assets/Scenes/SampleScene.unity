@@ -303,7 +303,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 4.5, z: -10}
+  m_LocalPosition: {x: 10, y: 8.71, z: -19.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -359,7 +359,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2884836446048239907, guid: d4e84a5153ee602458ecc79c4b0a6213, type: 3}
   m_PrefabInstance: {fileID: 2536400448434960669}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1817035057
+--- !u!114 &1817035059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -371,9 +371,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01282d2c941dbb74b93e9bba1535770e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alive: 1
-  liveCol: {r: 0.98823535, g: 0.44705886, b: 0.98823535, a: 0}
-  deadCol: {r: 0.20784315, g: 0.6627451, b: 0.6313726, a: 0}
+  alive: 0
+  liveCol: {r: 0.14779866, g: 0.9344458, b: 1, a: 0}
+  deadCol: {r: 1, g: 0, b: 0.9348836, a: 0}
   x: -1
   y: -1
 --- !u!1001 &2536400448434960669
@@ -434,12 +434,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5074160597337485701, guid: d4e84a5153ee602458ecc79c4b0a6213, type: 3}
+    - {fileID: 6488643687010648147, guid: d4e84a5153ee602458ecc79c4b0a6213, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2884836446048239907, guid: d4e84a5153ee602458ecc79c4b0a6213, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1817035057}
+      addedObject: {fileID: 1817035059}
   m_SourcePrefab: {fileID: 100100000, guid: d4e84a5153ee602458ecc79c4b0a6213, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
