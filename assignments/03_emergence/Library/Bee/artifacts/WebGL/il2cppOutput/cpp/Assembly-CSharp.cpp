@@ -528,67 +528,109 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CellGen_CountAliveNeighbors_m7C4225ED
 		V_0 = 0;
 		int32_t L_0 = __this->___x;
 		V_1 = ((int32_t)il2cpp_codegen_subtract(L_0, 1));
-		goto IL_0048;
+		goto IL_0060;
 	}
 
 IL_000d:
 	{
 		int32_t L_1 = __this->___y;
 		V_2 = ((int32_t)il2cpp_codegen_subtract(L_1, 1));
-		goto IL_0039;
+		goto IL_0051;
 	}
 
 IL_0018:
 	{
-		GameOfLife_t0E9C6DF2DAB168D034673AAC18C0BE2AFEFE6AC0* L_2 = __this->___gol;
-		CellGenU5BU2CU5D_t0D13F3CEEE3DD8FD6028B89FFFDB4A13D8FA6673* L_3 = L_2->___cells;
-		int32_t L_4 = V_1;
-		int32_t L_5 = V_2;
-		CellGen_t71F01434B0E9C6C83E8514325E247381876EE1CF* L_6;
-		L_6 = (L_3)->GetAtUnchecked(L_4, L_5);
-		bool L_7 = L_6->___alive;
-		if (!L_7)
+		int32_t L_2 = V_1;
+		if (!L_2)
 		{
-			goto IL_0035;
+			goto IL_004d;
 		}
 	}
 	{
-		int32_t L_8 = V_0;
-		V_0 = ((int32_t)il2cpp_codegen_add(L_8, 1));
+		int32_t L_3 = V_2;
+		if (!L_3)
+		{
+			goto IL_004d;
+		}
+	}
+	{
+		int32_t L_4 = V_1;
+		if ((((int32_t)L_4) == ((int32_t)((int32_t)20))))
+		{
+			goto IL_004d;
+		}
+	}
+	{
+		int32_t L_5 = V_2;
+		if ((((int32_t)L_5) == ((int32_t)((int32_t)20))))
+		{
+			goto IL_004d;
+		}
+	}
+	{
+		int32_t L_6 = V_1;
+		if ((((int32_t)L_6) == ((int32_t)(-1))))
+		{
+			goto IL_004d;
+		}
+	}
+	{
+		int32_t L_7 = V_2;
+		if ((((int32_t)L_7) == ((int32_t)(-1))))
+		{
+			goto IL_004d;
+		}
+	}
+	{
+		GameOfLife_t0E9C6DF2DAB168D034673AAC18C0BE2AFEFE6AC0* L_8 = __this->___gol;
+		CellGenU5BU2CU5D_t0D13F3CEEE3DD8FD6028B89FFFDB4A13D8FA6673* L_9 = L_8->___cells;
+		int32_t L_10 = V_1;
+		int32_t L_11 = V_2;
+		CellGen_t71F01434B0E9C6C83E8514325E247381876EE1CF* L_12;
+		L_12 = (L_9)->GetAtUnchecked(L_10, L_11);
+		bool L_13 = L_12->___alive;
+		if (!L_13)
+		{
+			goto IL_004d;
+		}
+	}
+	{
+		int32_t L_14 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_14, 1));
 	}
 
-IL_0035:
+IL_004d:
 	{
-		int32_t L_9 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_add(L_9, 1));
+		int32_t L_15 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_15, 1));
 	}
 
-IL_0039:
+IL_0051:
 	{
-		int32_t L_10 = V_2;
-		int32_t L_11 = __this->___y;
-		if ((((int32_t)L_10) <= ((int32_t)((int32_t)il2cpp_codegen_add(L_11, 1)))))
+		int32_t L_16 = V_2;
+		int32_t L_17 = __this->___y;
+		if ((((int32_t)L_16) <= ((int32_t)((int32_t)il2cpp_codegen_add(L_17, 1)))))
 		{
 			goto IL_0018;
 		}
 	}
 	{
-		int32_t L_12 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_12, 1));
+		int32_t L_18 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_18, 1));
 	}
 
-IL_0048:
+IL_0060:
 	{
-		int32_t L_13 = V_1;
-		int32_t L_14 = __this->___x;
-		if ((((int32_t)L_13) <= ((int32_t)((int32_t)il2cpp_codegen_add(L_14, 1)))))
+		int32_t L_19 = V_1;
+		int32_t L_20 = __this->___x;
+		if ((((int32_t)L_19) <= ((int32_t)((int32_t)il2cpp_codegen_add(L_20, 1)))))
 		{
 			goto IL_000d;
 		}
 	}
 	{
-		int32_t L_15 = V_0;
-		return L_15;
+		int32_t L_21 = V_0;
+		return L_21;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CellGen_Update_m2E1DE0754BE1C42698FE8769DFAFAF7ADB711DC5 (CellGen_t71F01434B0E9C6C83E8514325E247381876EE1CF* __this, const RuntimeMethod* method) 
@@ -598,7 +640,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CellGen_Update_m2E1DE0754BE1C42698FE8769
 		L_0 = Time_get_frameCount_m4A42E558A71301A216BDC49EC402D62F19C79667(NULL);
 		if (((int32_t)(L_0%((int32_t)30))))
 		{
-			goto IL_00f0;
+			goto IL_00f8;
 		}
 	}
 	{
@@ -694,42 +736,49 @@ IL_007a:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
 		L_13 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_11, L_12, NULL);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_10, L_13, NULL);
-		goto IL_00f0;
+		goto IL_00f8;
 	}
 
 IL_00ba:
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
-		memset((&L_14), 0, sizeof(L_14));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_14), (0.0f), (-0.100000001f), (0.0f), NULL);
-		__this->___scaleChange = L_14;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
-		L_15 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16 = L_15;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
-		L_17 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_16, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = __this->___scaleChange;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
-		L_19 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_17, L_18, NULL);
-		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_16, L_19, NULL);
-	}
-
-IL_00f0:
-	{
-		int32_t L_20;
-		L_20 = Time_get_frameCount_m4A42E558A71301A216BDC49EC402D62F19C79667(NULL);
-		if (((int32_t)(L_20%((int32_t)5000))))
+		bool L_14 = __this->___alive;
+		if (L_14)
 		{
-			goto IL_010f;
+			goto IL_00f8;
 		}
 	}
 	{
-		float L_21;
-		L_21 = Random_get_value_m2CEA87FADF5222EF9E13D32695F15E2BA282E24B(NULL);
-		__this->___alive = (bool)((((float)L_21) < ((float)(0.200000003f)))? 1 : 0);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		memset((&L_15), 0, sizeof(L_15));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_15), (0.0f), (-0.100000001f), (0.0f), NULL);
+		__this->___scaleChange = L_15;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
+		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = L_16;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_17, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = __this->___scaleChange;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
+		L_20 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_18, L_19, NULL);
+		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_17, L_20, NULL);
 	}
 
-IL_010f:
+IL_00f8:
+	{
+		int32_t L_21;
+		L_21 = Time_get_frameCount_m4A42E558A71301A216BDC49EC402D62F19C79667(NULL);
+		if (((int32_t)(L_21%((int32_t)5000))))
+		{
+			goto IL_0117;
+		}
+	}
+	{
+		float L_22;
+		L_22 = Random_get_value_m2CEA87FADF5222EF9E13D32695F15E2BA282E24B(NULL);
+		__this->___alive = (bool)((((float)L_22) < ((float)(0.200000003f)))? 1 : 0);
+	}
+
+IL_0117:
 	{
 		return;
 	}
