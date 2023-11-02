@@ -5,14 +5,18 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     float forwardSpeed = 10;
-    float rotateSpeed = 60;
+    float rotateSpeed = 100;
     float jumpStrength = 15;
     float gravityMod = 5f;
 
     float yVelocity = 0;
     CharacterController cc;
+    public GameObject bonusCol;
+    public GameObject bonusWall;
+    public GameObject coin;
 
     Renderer rend;
+    int score;
     int playerState = 0;
     //0 for grounded
     //1 for midair
@@ -26,13 +30,17 @@ public class Controller : MonoBehaviour
     public Color state3;
     public Color state4;
 
+    int frame = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        score = 0;
         cc = gameObject.GetComponent<CharacterController>();
         rend = gameObject.GetComponentInChildren<Renderer>();
         Application.targetFrameRate = 30;
+        bonusCol.GetComponentInChildren<Collider>().isTrigger = true;
+        bonusWall.GetComponentInChildren<Collider>().isTrigger = true;
     }
 
     void updateColor(int state)
@@ -59,12 +67,33 @@ public class Controller : MonoBehaviour
         }
     }
 
+
+    void Dash(Vector3 dashDist)
+    {
+        int framecount = frame;
+        while (frame > framecount + 100)
+        {
+            
+            if (frame % 10 == 0)
+            {
+                cc.Move(dashDist * Time.deltaTime);
+
+            }
+            else
+            {
+                frame++;
+            }
+            
+        }
+        return;
+    }
+
     // Update is called once per frame
     void Update()
     {
         float hAxis = Input.GetAxis("Horizontal");
         float vAxis = Input.GetAxis("Vertical");
-
+        frame++;
         transform.Rotate(0, hAxis * rotateSpeed * Time.deltaTime, 0, Space.Self);
 
         if (!cc.isGrounded)
@@ -100,34 +129,27 @@ public class Controller : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            Vector3 dashDist = (vAxis * transform.forward * (11/10));
+            Vector3 dashDist = (transform.forward * 500);
             dashDist.y = 0;
             if (playerState == 0)
             {
-                for (float i = 0; i < 15; i += Time.deltaTime)
-                {
-                    cc.Move(dashDist * Time.deltaTime);
-                }
+                cc.Move(dashDist * Time.deltaTime);
                 playerState = 3;
             }
             else if (playerState == 2)
             {
-                for (float i = 0; i < 15; i += Time.deltaTime)
-                {
-                    cc.Move(dashDist * Time.deltaTime);
-                }
+                cc.Move(dashDist * Time.deltaTime);
                 playerState = 4;
             }
             else if (playerState == 1)
             {
-                for (float i = 0; i < 15; i += Time.deltaTime)
-                {
-                    cc.Move(dashDist * Time.deltaTime);
-                }
-                //cc.Move(dashDist * Time.deltaTime);
+                cc.Move(dashDist * Time.deltaTime);
                 playerState = 3;
             }
         }
+        
+
+
         updateColor(playerState);
 
         Vector3 amountToMove = vAxis * transform.forward * forwardSpeed;
@@ -135,4 +157,20 @@ public class Controller : MonoBehaviour
         cc.Move(amountToMove * Time.deltaTime);
 
     }
+    
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Bonus"))
+        {
+            playerState = 1;
+            Destroy(other.gameObject);
+        }
+        if (other.CompareTag("Coin"))
+        {
+            score++;
+            Destroy(other.gameObject);
+        }
+    }
+    
+    
 }
