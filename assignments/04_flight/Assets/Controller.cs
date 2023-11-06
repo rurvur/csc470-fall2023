@@ -41,6 +41,7 @@ public class Controller : MonoBehaviour
         Application.targetFrameRate = 30;
         bonusCol.GetComponentInChildren<Collider>().isTrigger = true;
         bonusWall.GetComponentInChildren<Collider>().isTrigger = true;
+        coin.GetComponentInChildren<Collider>().isTrigger = true;
     }
 
     void updateColor(int state)
@@ -169,6 +170,7 @@ public class Controller : MonoBehaviour
         {
             score++;
             Destroy(other.gameObject);
+            Debug.Log("COIN GET");
         }
     }
     
