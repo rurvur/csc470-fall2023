@@ -1,0 +1,602 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.9f1 (ea401c316338) revision 15351836'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 16076 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/rhysc/OneDrive/Documents/GitHub/csc470-fall2023/assignments/04_flight
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58258
+Successfully changed project path to: C:/Users/rhysc/OneDrive/Documents/GitHub/csc470-fall2023/assignments/04_flight
+C:/Users/rhysc/OneDrive/Documents/GitHub/csc470-fall2023/assignments/04_flight
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [11636] Host "[IP] 10.119.200.255 [Port] 0 [Flags] 2 [Guid] 3770763922 [EditorId] 3770763922 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-8K59RUCM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [11636] Host "[IP] 10.119.200.255 [Port] 0 [Flags] 2 [Guid] 3770763922 [EditorId] 3770763922 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-8K59RUCM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
+Refreshing native plugins compatible for Editor in 13.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.9f1 (ea401c316338)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/rhysc/OneDrive/Documents/GitHub/csc470-fall2023/assignments/04_flight/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU (ID=0x24a0)
+    Vendor:   NVIDIA
+    VRAM:     8032 MB
+    Driver:   31.0.15.3713
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007728 seconds.
+- Loaded All Assemblies, in  0.583 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.330 seconds
+Domain Reload Profiling: 912ms
+	BeginReloadAssembly (218ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (225ms)
+		LoadAssemblies (216ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (222ms)
+			TypeCache.Refresh (220ms)
+				TypeCache.ScanAssembly (199ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (331ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (244ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (160ms)
+			ProcessInitializeOnLoadMethodAttributes (63ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.699 seconds
+Refreshing native plugins compatible for Editor in 2.74 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.584 seconds
+Domain Reload Profiling: 1282ms
+	BeginReloadAssembly (173ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (421ms)
+		LoadAssemblies (335ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (190ms)
+			TypeCache.Refresh (169ms)
+				TypeCache.ScanAssembly (153ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (585ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (432ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (333ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 4.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3071 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.3 KB). Loaded Objects now: 3534.
+Memory consumption went from 115.3 MB to 115.3 MB.
+Total: 4.025900 ms (FindLiveObjects: 0.373300 ms CreateObjectMapping: 0.149500 ms MarkObjects: 3.391700 ms  DeleteObjects: 0.109700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 86724.775134 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_35_3_Lava_Normal.mat
+  artifactKey: Guid(8566b92a1387e2c48b285293fc036114) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_35_3_Lava_Normal.mat using Guid(8566b92a1387e2c48b285293fc036114) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ee1fa8cd5d398f58a418785e6f0b4064') in 0.218932 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_27_4_Lava_Height.png
+  artifactKey: Guid(f48e6a248438ea34a95582e3bd1e4918) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_27_4_Lava_Height.png using Guid(f48e6a248438ea34a95582e3bd1e4918) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '88776048af34ffc68f4ddaf03db06679') in 0.081744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_23_1_Rocks_Ambient_Occlusion.png
+  artifactKey: Guid(ef520d91c394e83498031f05027a96fa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_23_1_Rocks_Ambient_Occlusion.png using Guid(ef520d91c394e83498031f05027a96fa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd94ecb973fd790c1411ff4a68e4792f2') in 0.056157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/GoldCoin.prefab
+  artifactKey: Guid(edab060d54be7ab42ad57c0ce5a56194) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GoldCoin.prefab using Guid(edab060d54be7ab42ad57c0ce5a56194) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b3fe5d53fbd7e95c05f8153441e69218') in 0.051003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_19_4_Dirt.mat
+  artifactKey: Guid(d24bde530a6cd174cb70a68743168031) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_19_4_Dirt.mat using Guid(d24bde530a6cd174cb70a68743168031) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7d1dfa5050a1e5924d9f142bf1397224') in 0.123058 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_23_1_Rocks_Normal.png
+  artifactKey: Guid(89afee2ff7c99f14fb6b93db354adbc5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_23_1_Rocks_Normal.png using Guid(89afee2ff7c99f14fb6b93db354adbc5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c2134904c8617e6293771d57785db870') in 0.098747 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/GoldCoin.mtl
+  artifactKey: Guid(dadb3d3013dc0b443b5112dc6f81dcf0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GoldCoin.mtl using Guid(dadb3d3013dc0b443b5112dc6f81dcf0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ff2501982297d5e43d804257225194cd') in 0.017798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_35_3_Lava_Emissive.mat
+  artifactKey: Guid(37fde4ebe2871c74a97c52830997abc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_35_3_Lava_Emissive.mat using Guid(37fde4ebe2871c74a97c52830997abc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f86624391eb6819f78fc6ae52ba55b48') in 0.046705 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/BonusScript.cs
+  artifactKey: Guid(df8273190dd9bc34e9a6d879d588762f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BonusScript.cs using Guid(df8273190dd9bc34e9a6d879d588762f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2e7b6d08ba27e2c4049e1049022fdf19') in 0.031332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_35_3_Lava_Normal.png
+  artifactKey: Guid(a464b9a07a241e942ab6ba947dc34463) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_35_3_Lava_Normal.png using Guid(a464b9a07a241e942ab6ba947dc34463) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '12a6ebc6ee2b609c296ed1839e35e7ff') in 0.073248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_58_1_Surface_Normal.png
+  artifactKey: Guid(3cf6eee3d0cee82429945f707475de05) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_58_1_Surface_Normal.png using Guid(3cf6eee3d0cee82429945f707475de05) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '492f57f310ef39c038c471e9a2d32ec7') in 0.049461 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_36_5_Water_Base_Color.png
+  artifactKey: Guid(d75d23fa05e7cd747ba54add1c60d577) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_36_5_Water_Base_Color.png using Guid(d75d23fa05e7cd747ba54add1c60d577) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7a03449093479201cfb3d6cd2d248f70') in 0.056106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_67_3_Tile_Roughness.png
+  artifactKey: Guid(11b3f9a6d0ebac34596a61f9107f0498) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_67_3_Tile_Roughness.png using Guid(11b3f9a6d0ebac34596a61f9107f0498) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1235d205240d8b29c4bab8f96ea8c11c') in 0.050405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_67_3_Tile_Base_Color.mat
+  artifactKey: Guid(0d62f6f48d4b35b45ad70b181eb6f3e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_67_3_Tile_Base_Color.mat using Guid(0d62f6f48d4b35b45ad70b181eb6f3e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2dc91234534f733cf11fa3cf06acfb3e') in 0.046270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_16_2_Sand_Ambient_Occlusion.png
+  artifactKey: Guid(87371d6475acff34aaf1fd4596845388) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_16_2_Sand_Ambient_Occlusion.png using Guid(87371d6475acff34aaf1fd4596845388) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd7dbca1871622d2ebfa6f3fe81a05b85') in 0.046847 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Controller.cs
+  artifactKey: Guid(ce087999d1e14c64b98e432408acb104) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Controller.cs using Guid(ce087999d1e14c64b98e432408acb104) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bfd0c0deabea11d0dc3c1cf174897b32') in 0.028701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_79_5_Sci-fi_Base_Color.png
+  artifactKey: Guid(1e103bb5bfee2fc4aabb9e1a0ea6f4a9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_79_5_Sci-fi_Base_Color.png using Guid(1e103bb5bfee2fc4aabb9e1a0ea6f4a9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a27fd75b62451410b192bcf3a7c222ea') in 0.053363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_16_2_Sand_Base_Color.png
+  artifactKey: Guid(94ddededa5cbf2242b63ddd549cfba38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_16_2_Sand_Base_Color.png using Guid(94ddededa5cbf2242b63ddd549cfba38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2af0e2cac785e4685e304ea60fde7b87') in 0.130892 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_67_3_Tile_Normal.png
+  artifactKey: Guid(ca2ef8a59be983c45b92dd03afd9b342) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_67_3_Tile_Normal.png using Guid(ca2ef8a59be983c45b92dd03afd9b342) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '37d39740fe864c7ae3e286540535137b') in 0.151766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_7_1_Tiles_Normal.png
+  artifactKey: Guid(8931af16587629c4187693a56cd9de54) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_7_1_Tiles_Normal.png using Guid(8931af16587629c4187693a56cd9de54) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd29387707bb68b491e5679501bf71fe2') in 0.157223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000935 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_81_3_Sci-fi_Normal.png
+  artifactKey: Guid(a6acf24a229082b4c976a2037f970f8a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_81_3_Sci-fi_Normal.png using Guid(a6acf24a229082b4c976a2037f970f8a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '75c1db0c7984fcfc36b549fe94d51293') in 0.141945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_7_1_Tiles_Height.png
+  artifactKey: Guid(6d7c872c3a1aea8448fd8eb308df97f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_7_1_Tiles_Height.png using Guid(6d7c872c3a1aea8448fd8eb308df97f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3d274cab7d99a4f3741c57e89b62fe05') in 0.048392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_27_4_Lava_Roughness.png
+  artifactKey: Guid(b83f09f3e1d5cd14fadd54b3226e6e26) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_27_4_Lava_Roughness.png using Guid(b83f09f3e1d5cd14fadd54b3226e6e26) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7f36e6f4d9821b0aebd678eb700b177e') in 0.222838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_27_4_Lava_Base_Color.mat
+  artifactKey: Guid(41b9d00cfe285b44880b5a4cf30aaaaa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_27_4_Lava_Base_Color.mat using Guid(41b9d00cfe285b44880b5a4cf30aaaaa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '61a8d45cc0741774bcd7b8aa6d8ceb28') in 0.031227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_2_3_Wood.mat
+  artifactKey: Guid(e2782bd09fb749e4f8c457cb9c8cc6cd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_2_3_Wood.mat using Guid(e2782bd09fb749e4f8c457cb9c8cc6cd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '216942ce3896c5c6792162e48c6933d7') in 0.100633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_30_3_Roofs_Ambient_Occlusion.png
+  artifactKey: Guid(c4dbeaa72f7890047aa4a3104e154956) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_30_3_Roofs_Ambient_Occlusion.png using Guid(c4dbeaa72f7890047aa4a3104e154956) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '77d540ef833994b4b3d5938e3eb54cbe') in 0.258975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_16_2_Sand_Roughness.png
+  artifactKey: Guid(04c0fe5e0cf253a48a1fbf82b9666e96) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_16_2_Sand_Roughness.png using Guid(04c0fe5e0cf253a48a1fbf82b9666e96) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '27b30f34c46569503c619e3e4b857e19') in 0.053819 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_81_3_Sci-fi.mat
+  artifactKey: Guid(d12d326c7ff660a40aed23b21d98c6ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_81_3_Sci-fi.mat using Guid(d12d326c7ff660a40aed23b21d98c6ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6ea5aa994d24a030aa15055ed7f4e096') in 0.059729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_46_2_Tiles_Normal.png
+  artifactKey: Guid(76f51ee2128be8340950cc15ba9695dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_46_2_Tiles_Normal.png using Guid(76f51ee2128be8340950cc15ba9695dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bdd284effe0b8467847e9ae2b1970836') in 0.094601 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_36_5_Water.mat
+  artifactKey: Guid(490c25b2fda35fc4582a9582c4179ad5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Materials/Vol_36_5_Water.mat using Guid(490c25b2fda35fc4582a9582c4179ad5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fad392dcb5bbe78518ed10fa10f85b12') in 0.209867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_100_1_Pixel_Roughness.png
+  artifactKey: Guid(cf409b0b820307c47bcb38a890a217e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/LowlyPoly/Free Stylized Textures/Textures/Vol_100_1_Pixel_Roughness.png using Guid(cf409b0b820307c47bcb38a890a217e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '21e131c05db236d35fc263ab26f2fe77') in 0.058449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (0.8 KB). Loaded Objects now: 3534.
+Memory consumption went from 66.6 MB to 66.6 MB.
+Total: 7.779400 ms (FindLiveObjects: 0.485800 ms CreateObjectMapping: 0.288100 ms MarkObjects: 6.963500 ms  DeleteObjects: 0.040100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.0 KB). Loaded Objects now: 3534.
+Memory consumption went from 66.9 MB to 66.8 MB.
+Total: 12.837600 ms (FindLiveObjects: 0.446300 ms CreateObjectMapping: 0.305300 ms MarkObjects: 12.044600 ms  DeleteObjects: 0.039100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.575 seconds
+Refreshing native plugins compatible for Editor in 2.91 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.056 seconds
+Domain Reload Profiling: 2629ms
+	BeginReloadAssembly (172ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (309ms)
+		LoadAssemblies (298ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (102ms)
+			TypeCache.Refresh (80ms)
+				TypeCache.ScanAssembly (70ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (2057ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1512ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (108ms)
+			ProcessInitializeOnLoadAttributes (1323ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 16.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3064 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.5 KB). Loaded Objects now: 3537.
+Memory consumption went from 114.4 MB to 114.4 MB.
+Total: 5.438200 ms (FindLiveObjects: 0.340200 ms CreateObjectMapping: 0.197600 ms MarkObjects: 4.824000 ms  DeleteObjects: 0.075000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.0 KB). Loaded Objects now: 3537.
+Memory consumption went from 67.1 MB to 67.1 MB.
+Total: 3.836800 ms (FindLiveObjects: 0.210800 ms CreateObjectMapping: 0.094200 ms MarkObjects: 3.504400 ms  DeleteObjects: 0.026200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
