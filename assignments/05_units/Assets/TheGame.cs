@@ -35,7 +35,7 @@ public class TheGame : MonoBehaviour
     void Update()
     {
         frame += 1;
-        if (frame == 300/econ)
+        if (frame == 100/econ)
         {
             money += 1;
             frame = 0;

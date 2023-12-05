@@ -353,6 +353,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Buttons.cs"
+"Assets/CowScript.cs"
 "Assets/Game Buffs/Free Stylized Textures/Scripts/GameBuffsInitializer.cs"
 "Assets/TerrainBuilder.cs"
 "Assets/TerrainGen.cs"

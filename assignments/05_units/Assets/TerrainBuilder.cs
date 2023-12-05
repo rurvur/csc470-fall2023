@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class TerrainBuilder : MonoBehaviour
 {
+    //NOTICE: Terrain hardly matters in this prototype, I was pretty ambitious with my ideas for this assignment but if I try to work it into my concept I won't have enough time for my final, so I'm
+    //        instead doing a much more limited version and choosing to invest more time into getting the final done.
+    
+    
     public TerrainGen[] blocks;
     public GameObject blockPrefab;
     public TerrainGen[] badblocks;
