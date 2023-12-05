@@ -20,6 +20,17 @@ public class TheGame : MonoBehaviour
         return money;
     }
 
+    public void SetMoney(int change)
+    {
+        money = money - change;
+    }
+
+    public void AddEcon()
+    {
+        econ++;
+        frame = 0;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -28,7 +39,6 @@ public class TheGame : MonoBehaviour
         {
             money += 1;
             frame = 0;
-            Debug.Log(money);
         }
     }
 }

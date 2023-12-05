@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 4675047512883682658}
   - component: {fileID: 8109485579014948474}
   - component: {fileID: 6352432912813607993}
+  - component: {fileID: 5906256902869507318}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -387,6 +388,20 @@ MonoBehaviour:
   econText: {fileID: 2543622330319195498}
   newmun: 0
   Manager: {fileID: 0}
+--- !u!114 &5906256902869507318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2281778868240568003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db6d943d4bb3c04295e6039aa7b5ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  econPrice: 0
+  Manager: {fileID: 8482255673587645635, guid: 588210bc453cb4a4781a75dd64267382, type: 3}
 --- !u!1 &3006942873732549781
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,9 +791,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 6dc86d32b9099eb4eb4d38da2c50fb66, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
+        m_MethodName: EconButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -787,4 +802,4 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
