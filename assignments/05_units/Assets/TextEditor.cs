@@ -12,12 +12,15 @@ public class TextEditor : MonoBehaviour
     public GameObject cowPrefab;
     public TMP_Text price;
     public TMP_Text cowtxt;
+    public int cowcount = 0;
+    public TMP_Text wintxt;
 
     // Start is called before the first frame update
     void Start()
     {
         Manager = GameObject.Find("GameplayObj");
         econP = 10;
+        cowcount = 0;
     }
 
     //EconP is extremely buggy, not sure why but it doesn't properly reset and different methods read different values for it just making the econbutton a static cost for now
@@ -40,10 +43,26 @@ public class TextEditor : MonoBehaviour
 
     }
 
+    public void perished()
+    {
+        cowcount = cowcount - 1;
+    }
+
+    private void CowSpawned()
+    {
+        cowcount++;
+        if (cowcount >= 10)
+        {
+            wintxt.text = "You Win!";
+        }
+
+    }
+
     public void CowSpawn()
     {
         if (Manager.GetComponent<TheGame>().GetMoney() >= 25)
         {
+            Manager.GetComponent<TheGame>();
             Vector3 cowpos = transform.position;
             cowpos.x = -110;
             cowpos.y = -105;
@@ -51,6 +70,7 @@ public class TextEditor : MonoBehaviour
             GameObject cowObj = Instantiate(cowPrefab, cowpos, transform.rotation);
             Debug.Log("Cow Spawned!");
             Manager.GetComponent<TheGame>().SetMoney(25);
+            CowSpawned();
         }
         else
         {
@@ -65,5 +85,6 @@ public class TextEditor : MonoBehaviour
         econText.text = "Money: " + newmun.ToString();
         price.text = "Cost: 15";
         cowtxt.text = "Cost: 25";
+        
     }
 }

@@ -5,16 +5,18 @@ using UnityEngine;
 public class CowScript : MonoBehaviour
 {
     int chance = 0;
+    public GameObject Editor;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        Editor = GameObject.Find("Canvas");
     }
 
     void Perish()
     {
         Destroy(gameObject);
+        Editor.GetComponent<TextEditor>().perished();
     }
 
 
