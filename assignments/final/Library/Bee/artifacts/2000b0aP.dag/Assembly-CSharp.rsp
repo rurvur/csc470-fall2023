@@ -291,6 +291,7 @@
 "Assets/CanvasManager.cs"
 "Assets/Controller.cs"
 "Assets/Director.cs"
+"Assets/EliteScript.cs"
 "Assets/EnemyScript.cs"
 "Assets/FireballScript.cs"
 "Assets/SceneChanger.cs"

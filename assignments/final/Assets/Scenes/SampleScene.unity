@@ -1249,7 +1249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 2506501433060371169, guid: 5871d0b146e2cac42bb2e7e327cabcdd, type: 3}
-  ElitePrefab: {fileID: 2506501433060371169, guid: 5871d0b146e2cac42bb2e7e327cabcdd, type: 3}
+  ElitePrefab: {fileID: 1591172604450520663, guid: ea36db28f68306a438f96600c5a55194, type: 3}
 --- !u!1 &1575055104
 GameObject:
   m_ObjectHideFlags: 0

@@ -39,6 +39,12 @@ extern void Director_spawnEnemy_mAA5DBF0C6E781F2417ACC539877D149407F783E0 (void)
 extern void Director_spawnElite_mF2793327AA1040795A9C9C8FCFF9818322D26BFB (void);
 extern void Director_Update_mD2523A58D1D5FB0B8335425FE991AD4641B31925 (void);
 extern void Director__ctor_m90572E7362C15ADFDCDA90168D59213246DD981D (void);
+extern void EliteScript_Start_mED06F658F85363E8C99526CA83F0B0B53A68FAE5 (void);
+extern void EliteScript_TrackPlayer_m95C54753F0135A0AFAC27A2AD6A6CE82D49E5FFA (void);
+extern void EliteScript_perish_m5D1BBE77D1E37915663722B040EAE9DC2D7165D2 (void);
+extern void EliteScript_Update_mEDC5C54E26F586C74A441E76944CB6169BDB0098 (void);
+extern void EliteScript_OnTriggerEnter_m7C061223247F1A818D8E8CB2048B67B1B6BFB9EB (void);
+extern void EliteScript__ctor_m8189216DDDF2AC1926FA16187786333279483139 (void);
 extern void EnemyScript_Start_m040B75AAC7B4AA57C2EE3CCCFDDC9E7563B5F47C (void);
 extern void EnemyScript_TrackPlayer_m1D97CB7F1DF834B48773C4739B22F3FC04234247 (void);
 extern void EnemyScript_perish_m7E7302C364F89F113888D29FBAFDDCEB102FC1A1 (void);
@@ -322,7 +328,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[310] = 
+static Il2CppMethodPointer s_methodPointers[316] = 
 {
 	ButtonScript_StartButton_mBFD8B0B91BC861C4267BC24B092AC313653F191F,
 	ButtonScript_Start_m8B6809AE1C4A4E3B431BBC17203BE7FE8C23DFBC,
@@ -351,6 +357,12 @@ static Il2CppMethodPointer s_methodPointers[310] =
 	Director_spawnElite_mF2793327AA1040795A9C9C8FCFF9818322D26BFB,
 	Director_Update_mD2523A58D1D5FB0B8335425FE991AD4641B31925,
 	Director__ctor_m90572E7362C15ADFDCDA90168D59213246DD981D,
+	EliteScript_Start_mED06F658F85363E8C99526CA83F0B0B53A68FAE5,
+	EliteScript_TrackPlayer_m95C54753F0135A0AFAC27A2AD6A6CE82D49E5FFA,
+	EliteScript_perish_m5D1BBE77D1E37915663722B040EAE9DC2D7165D2,
+	EliteScript_Update_mEDC5C54E26F586C74A441E76944CB6169BDB0098,
+	EliteScript_OnTriggerEnter_m7C061223247F1A818D8E8CB2048B67B1B6BFB9EB,
+	EliteScript__ctor_m8189216DDDF2AC1926FA16187786333279483139,
 	EnemyScript_Start_m040B75AAC7B4AA57C2EE3CCCFDDC9E7563B5F47C,
 	EnemyScript_TrackPlayer_m1D97CB7F1DF834B48773C4739B22F3FC04234247,
 	EnemyScript_perish_m7E7302C364F89F113888D29FBAFDDCEB102FC1A1,
@@ -635,7 +647,7 @@ static Il2CppMethodPointer s_methodPointers[310] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[310] = 
+static const int32_t s_InvokerIndices[316] = 
 {
 	4444,
 	4444,
@@ -663,6 +675,12 @@ static const int32_t s_InvokerIndices[310] =
 	3658,
 	3658,
 	4444,
+	4444,
+	4444,
+	4444,
+	4444,
+	4444,
+	3578,
 	4444,
 	4444,
 	4444,
@@ -952,7 +970,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	310,
+	316,
 	s_methodPointers,
 	0,
 	NULL,
