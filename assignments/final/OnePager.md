@@ -23,7 +23,7 @@ Created by Rhys Cabot in an absurd timecrunch from finals week
 
 (Title screen seen above)
 
-[gameplay.png](gameplay.png)
+![gameplay.png](gameplay.png)
 (Gameplay screenshot)
 
 ## Future roadmap:
