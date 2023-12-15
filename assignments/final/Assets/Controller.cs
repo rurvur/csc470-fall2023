@@ -15,6 +15,11 @@ public class Controller : MonoBehaviour
     int level;
     int exp;
     int toNextLevel;
+    public GameObject Manager;
+    public GameObject FireballPrefab;
+    int fireCool;
+    int frame;
+    
 
     CharacterController cc;
     Renderer rend;
@@ -30,6 +35,9 @@ public class Controller : MonoBehaviour
         level = 1;
         exp = 0;
         toNextLevel = 10;
+        fireCool = 0;
+        frame = 0;
+        Manager = GameObject.Find("SceneManager");
     }
 
     public void updateStats(string stat, float change)
@@ -70,16 +78,42 @@ public class Controller : MonoBehaviour
         maxhealth++;
         health = maxhealth;
         level += 1;
+        if (level % 5 == 0)
+        {
+            turnSpeedChange(1f);
+        }
+    }
+
+    public string getHealth()
+    {
+        return health.ToString();
+    }
+
+    public string getMax()
+    {
+        return maxhealth.ToString();
+    }
+
+    public string getLevel()
+    {
+        return level.ToString();
+    }
+
+    public void giveEXP(int val)
+    {
+        exp += val;
     }
 
     void GameOver()
     {
+        Manager.GetComponent<SceneChanger>().ChangeScene("GameOver");
         Destroy(gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
+        frame++;
         float hAxis = Input.GetAxis("Horizontal");
         float vAxis = Input.GetAxis("Vertical");
         transform.Rotate(0, hAxis * turnSpeed * Time.deltaTime, 0, Space.Self);
@@ -98,7 +132,16 @@ public class Controller : MonoBehaviour
                 yVel = jumpPower;
             }
         }
-        
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (fireCool < 0)
+            {
+                Vector3 pos = transform.position;
+                GameObject fireball = Instantiate(FireballPrefab, pos, transform.rotation);
+                fireCool = 10;
+            }
+        }
+
         if (exp >= toNextLevel)
         {
             LevelUp();
@@ -113,6 +156,10 @@ public class Controller : MonoBehaviour
         if (health <= 0)
         {
             GameOver();
+        }
+        if (frame % 30 == 0)
+        {
+            fireCool--;
         }
     }
 

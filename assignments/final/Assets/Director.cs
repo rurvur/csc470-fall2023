@@ -66,13 +66,13 @@ public class Director : MonoBehaviour
         {
             credits += credspeed;
         }
-        if (frame % 6000 == 0)
+        if (frame % 1500 == 0)
         {
             spawnWave(credits);
             wavecount++;
             credits = 0;
         }
-        if (frame % 15000 == 0)
+        if (frame % 5000 == 0)
         {
             credspeed += 1;
         }

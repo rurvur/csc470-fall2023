@@ -5,9 +5,9 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     public GameObject player;
-    float speed = 3.5f;
+    float speed = 5f;
     public int health = 10;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +22,7 @@ public class EnemyScript : MonoBehaviour
 
     void perish()
     {
+        player.GetComponent<Controller>().giveEXP(1);
         Destroy(gameObject);
     }
 
@@ -33,6 +34,16 @@ public class EnemyScript : MonoBehaviour
         {
             perish();
         }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Fireball"))
+        {
+            health -= 10;
+            Destroy(other.gameObject);
+        }
+
     }
 
 
