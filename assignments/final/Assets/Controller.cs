@@ -67,7 +67,14 @@ public class Controller : MonoBehaviour
     {
         updateStats("speed", 1);
         updateStats("power", 1);
+        maxhealth++;
+        health = maxhealth;
         level += 1;
+    }
+
+    void GameOver()
+    {
+        Destroy(gameObject);
     }
 
     // Update is called once per frame
@@ -102,6 +109,11 @@ public class Controller : MonoBehaviour
         Vector3 amountToMove = vAxis * transform.forward * speed;
         amountToMove.y = yVel;
         cc.Move(amountToMove * Time.deltaTime);
+
+        if (health <= 0)
+        {
+            GameOver();
+        }
     }
 
     void OnTriggerEnter(Collider other)

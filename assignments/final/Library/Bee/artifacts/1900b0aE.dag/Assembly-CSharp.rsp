@@ -355,7 +355,6 @@
 "Assets/Controller.cs"
 "Assets/Director.cs"
 "Assets/EnemyScript.cs"
-"Assets/GameGen.cs"
 -langversion:9.0
 
 /deterministic

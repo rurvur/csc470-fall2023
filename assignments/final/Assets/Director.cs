@@ -7,6 +7,7 @@ public class Director : MonoBehaviour
     int credits;
     int credspeed;
     int frame;
+    int wavecount;
     public GameObject EnemyPrefab;
     public GameObject ElitePrefab;
     
@@ -16,26 +17,32 @@ public class Director : MonoBehaviour
         credits = 0;
         credspeed = 1;
         frame = 0;
+        wavecount = 0;
     }
 
     void spawnWave(int creds)
     {
         Vector3 pos = transform.position;
         pos.x += Random.Range(-10.0f, 10.0f);
-        while (creds >= 25)
+        if (wavecount >= 10)
         {
-            pos.x += Random.Range(-3.0f, 3.0f);
-            spawnElite(pos);
-            pos = transform.position;
-            creds -= 25;
-            Debug.Log("Elite spawned!");
+            while (creds >= 50)
+            {
+                pos.x += Random.Range(-15.0f, 10.0f);
+                pos.z += Random.Range(-15.0f, 10.0f);
+                spawnElite(pos);
+                pos = transform.position;
+                creds -= 50;
+                Debug.Log("Elite spawned!");
+            }
         }
-        while (creds >= 1)
+        while (creds >= 5)
         {
-            pos.x += Random.Range(-3.0f, 3.0f);
+            pos.x += Random.Range(-15.0f, 10.0f);
+            pos.z += Random.Range(-15.0f, 10.0f);
             spawnEnemy(pos);
             pos = transform.position;
-            creds -= 1;
+            creds -= 5;
             Debug.Log("Enemy spawned!");
             
         }
@@ -59,10 +66,14 @@ public class Director : MonoBehaviour
         {
             credits += credspeed;
         }
-        if (frame % 3000 == 0)
+        if (frame % 6000 == 0)
         {
             spawnWave(credits);
+            wavecount++;
             credits = 0;
+        }
+        if (frame % 15000 == 0)
+        {
             credspeed += 1;
         }
     }
